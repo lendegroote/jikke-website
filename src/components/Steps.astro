@@ -1,0 +1,15 @@
+---
+import { steps } from '../data/site.js';
+---
+
+<section id="aanpak" class="steps container">
+  <h2 class="h h--lg">In vier stappen<br />naar <em>jouw resultaat.</em></h2>
+  <div class="step-cards">
+    {steps.map((s, i) => (
+      <article class:list={['step', { 'step--dark': i === 0 }]}>
+        <span class="h step__num">{String(i + 1).padStart(2, '0')}</span>
+        <div><h3 class="h">{s.title}</h3><p>{s.text}</p></div>
+      </article>
+    ))}
+  </div>
+</section>

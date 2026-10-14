@@ -1,0 +1,33 @@
+---
+import { goals, IG, WHATSAPP } from '../data/site.js';
+---
+
+<section id="intake" class="intake-wrap">
+  <div class="intake">
+    <img class="intake__img" src="/img/hood.jpg" alt="" loading="lazy" />
+    <div class="intake__shade"></div>
+    <div class="intake__text">
+      <h2 class="h h--xl2">Klaar voor<br /><em>de eerste stap?</em></h2>
+      <p>Vul het formulier in en ik neem binnen 48 uur contact met je op voor een gratis intakegesprek.</p>
+      <div class="contact">
+        <a href={WHATSAPP} target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
+        <a href={IG} target="_blank" rel="noopener"><i data-lucide="camera"></i> @jikke_vdbx</a>
+      </div>
+    </div>
+    <form class="form" id="intake-form" novalidate>
+      <h3 class="h h--sm">Jouw <em>intake</em></h3>
+      <input name="naam" placeholder="Naam" required autocomplete="name" />
+      <input name="email" type="email" placeholder="E-mail" required autocomplete="email" />
+      <input name="telefoon" type="tel" placeholder="Telefoon" autocomplete="tel" />
+      <fieldset class="chips">
+        <legend class="sr-only">Wat is je doel?</legend>
+        {goals.map((g, i) => (
+          <label><input type="radio" name="doel" value={g.label} checked={i === 0} /><span>{g.label}</span></label>
+        ))}
+      </fieldset>
+      <textarea name="bericht" rows="4" placeholder="Vertel kort iets over jezelf..."></textarea>
+      <button type="submit" class="btn btn--dark btn--full">Verstuur mijn intake <i data-lucide="arrow-right"></i></button>
+      <p class="form__msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>

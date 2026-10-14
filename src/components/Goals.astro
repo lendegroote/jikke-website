@@ -1,0 +1,41 @@
+---
+import { goals } from '../data/site.js';
+const first = goals[0];
+---
+
+<section id="doelen" class="goals container">
+  <div class="section-head">
+    <div>
+      <h2 class="h h--lg">Coaching gemaakt<br />voor <em>het echte leven.</em></h2>
+      <p>Kies je doel. Elk traject start met een gratis intake.</p>
+    </div>
+    <a href="#intake" class="btn btn--dark">Start je intake <i data-lucide="arrow-right"></i></a>
+  </div>
+
+  <div class="goal-cards">
+    {goals.map((g, i) => (
+      <button class:list={['gcard', { 'gcard--wide': g.wide, 'is-active': i === 0 }]} data-goal={g.key}>
+        <img src={g.card.img} alt={g.card.alt} loading="lazy" />
+        <span class="gcard__top"><span class="num">{g.num}</span><span class="circle"><i data-lucide="arrow-up-right"></i></span></span>
+        <span class="gcard__bottom"><span class:list={['h', g.wide ? 'h--md' : 'h--sm']}>{g.label}</span><span>{g.card.text}</span></span>
+      </button>
+    ))}
+  </div>
+
+  <div id="doel-detail" class="detail">
+    <div class="detail__text">
+      <div class="tabs" role="tablist">
+        {goals.map((g, i) => (
+          <button role="tab" class:list={['tab', { 'is-active': i === 0 }]} aria-selected={i === 0 ? 'true' : 'false'} data-goal={g.key}>{g.label}</button>
+        ))}
+      </div>
+      <h3 class="h h--md detail__title" set:html={first.title} />
+      <p class="detail__body">{first.body}</p>
+      <ul class="checks detail__list">
+        {first.list.map((item) => <li><span class="ck"><i data-lucide="check"></i></span>{item}</li>)}
+      </ul>
+      <a href="#intake" class="btn btn--white detail__cta" data-goal={first.key}>{first.cta} <i data-lucide="arrow-right"></i></a>
+    </div>
+    <img class="detail__img" src={first.img} alt={first.alt} />
+  </div>
+</section>

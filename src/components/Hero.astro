@@ -1,0 +1,26 @@
+---
+import { nav } from '../data/site.js';
+---
+
+<header class="hero-wrap">
+  <div class="hero">
+    <img class="hero__img" src="/img/car.jpg" alt="Jikke bij een sportwagen" />
+    <div class="hero__shade"></div>
+    <nav class="nav">
+      <a href="#" class="logo">JIKKE</a>
+      <div class="nav__links">
+        {nav.map((l) => <a href={l.href}>{l.label}</a>)}
+      </div>
+      <a href="#intake" class="btn btn--white">Start intake <i data-lucide="arrow-right"></i></a>
+      <button class="nav__burger" aria-label="Menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    </nav>
+    <div class="hero__text">
+      <h1 class="h h--xl">Jouw lichaam.<br />Jouw plan.<br /><em>Jouw tempo.</em></h1>
+      <p class="hero__sub">Voedingscoaching rond pure voeding. Afvallen, op gewicht blijven of sterker worden, met een plan dat blijft werken.</p>
+      <div class="btns">
+        <a href="#intake" class="btn btn--white">Plan je gratis intake <i data-lucide="arrow-right"></i></a>
+        <a href="#doelen" class="btn btn--ghost">Kies je doel</a>
+      </div>
+    </div>
+  </div>
+</header>

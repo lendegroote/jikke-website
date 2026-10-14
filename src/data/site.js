@@ -1,0 +1,69 @@
+// All page content in one place, so copy and photos are easy to swap.
+
+export const IG = 'https://www.instagram.com/jikke_vdbx/';
+export const WHATSAPP = 'https://wa.me/32400000000'; // placeholder, real number before launch
+
+export const nav = [
+  { href: '#doelen', label: 'Doelen' },
+  { href: '#aanpak', label: 'Aanpak' },
+  { href: '#over-mij', label: 'Over mij' },
+  { href: '#faq', label: 'FAQ' },
+  { href: '#intake', label: 'Contact' },
+];
+
+// Carousel: lines based on her own Instagram captions, linked to the real posts
+export const posts = [
+  { href: 'https://www.instagram.com/reel/DX1-x5lMUAC/', img: '/img/hero.jpg', alt: 'Jikke traint in de gym', tag: 'Mindset', quote: 'Discipline bouwt het. Consistentie houdt het.' },
+  { href: 'https://www.instagram.com/p/DVJnGXdDBqe/', img: '/img/herofood.jpg', alt: 'Havermout met banaan op een weegschaal', tag: 'Voeding', quote: 'What I eat in a day: -0,5 kg per week, zonder honger.' },
+  { href: 'https://www.instagram.com/reel/DWMdKxVjET0/', img: '/img/pump.jpg', alt: 'Jikke toont haar rug in de spiegel', tag: 'Training', quote: 'De gym bouwt niet alleen je lichaam. Hij bouwt je discipline.' },
+  { href: 'https://www.instagram.com/reel/DT8UAgWDIJ0/', img: '/img/tip.jpg', alt: 'Jikke in de gym', tag: 'Tip', quote: 'Zorg dat je elke dag genoeg eiwitten binnen hebt.' },
+  { href: 'https://www.instagram.com/reel/DVWf-I1jICb/', img: '/img/gym2.jpg', alt: 'Jikke in de gym', tag: 'Afvallen', quote: 'Calorie deficit works. Als je plan klopt.' },
+  { href: 'https://www.instagram.com/p/DZnMtZ-DF4B/', img: '/img/hood.jpg', alt: 'Jikke bij een sportwagen', tag: 'Progress', quote: 'Surpass your limits. Elke week een stap verder.' },
+];
+
+// Goal cards + the detail block they open
+export const goals = [
+  {
+    key: 'afvallen', label: 'Afvallen', num: '01', wide: true,
+    card: { img: '/img/afvallen.jpg', alt: 'Jikke na haar cut', text: 'Duurzaam gewicht verliezen, zonder jojo-effect.' },
+    title: 'Afvallen <em>zonder crashdieet.</em>',
+    body: 'We werken met pure, onbewerkte voeding die je vult en energie geeft. Je leert wat je eet, waarom het werkt en hoe je het volhoudt, ook in drukke weken.',
+    list: ['Voedingsplan op maat', 'Wekelijkse check-in en bijsturing', 'Recepten en boodschappenlijsten', 'WhatsApp support'],
+    img: '/img/herofood.jpg', alt: 'Havermout met banaan op een keukenweegschaal',
+    cta: 'Start je intake: afvallen',
+  },
+  {
+    key: 'gewicht', label: 'Op gewicht blijven', num: '02',
+    card: { img: '/img/gewicht.jpg', alt: 'Jikke buiten op een uitzichtpunt', text: 'Je resultaat vasthouden, ontspannen eten.' },
+    title: 'Op gewicht blijven, <em>zonder stress.</em>',
+    body: 'Je resultaat vasthouden is een vaardigheid. We zoeken een ritme waarin je geniet van etentjes en feestjes, en weet hoe je daarna gewoon weer oppakt.',
+    list: ['Onderhoudsplan op maat', 'Tweewekelijkse check-in', 'Flexibele recepten voor elke dag', 'WhatsApp support'],
+    img: '/img/food.jpg', alt: 'Kom met steak en groenten',
+    cta: 'Start je intake: op gewicht blijven',
+  },
+  {
+    key: 'aankomen', label: 'Aankomen', num: '03',
+    card: { img: '/img/aankomen.jpg', alt: 'Jikke traint op een toestel', text: 'Spiermassa opbouwen met de juiste voeding.' },
+    title: 'Aankomen en <em>sterker worden.</em>',
+    body: 'Gericht aankomen en spiermassa opbouwen met voeding die je training echt ondersteunt. Genoeg eiwitten, genoeg energie en een plan dat meegroeit met je progressie.',
+    list: ['Voedingsplan afgestemd op je training', 'Wekelijkse check-in en bijsturing', 'Eiwitrijke recepten', 'WhatsApp support'],
+    img: '/img/flex2.jpg', alt: 'Jikke toont haar rugspieren',
+    cta: 'Start je intake: aankomen',
+  },
+];
+
+export const steps = [
+  { title: 'Gratis intake', text: 'We leren elkaar kennen: je doel, je dag en wat je tot nu toe tegenhield.' },
+  { title: 'Plan op maat', text: 'Een voedingsplan dat past bij jouw smaak, ritme en training.' },
+  { title: 'Wekelijkse coaching', text: 'Elke week een check-in. We sturen bij waar nodig.' },
+  { title: 'Zelfstandig verder', text: 'Je leert zelf de juiste keuzes maken, zodat je resultaat blijft.' },
+];
+
+// Answers 2-5 still to come from Jikke
+export const faq = [
+  { q: 'Voor wie is deze coaching?', a: 'Voor iedereen met een concreet doel: afvallen, op gewicht blijven of aankomen. Je hoeft geen ervaring te hebben, we starten waar jij staat.' },
+  { q: 'Moet ik alles afwegen en calorieën tellen?', a: '[Antwoord Jikke]' },
+  { q: 'Hoe lang duurt een traject?', a: '[Antwoord Jikke]' },
+  { q: 'Wat kost coaching?', a: '[Antwoord Jikke]' },
+  { q: 'Kan ik volledig online begeleid worden?', a: '[Antwoord Jikke]' },
+];

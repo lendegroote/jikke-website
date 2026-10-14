@@ -1,0 +1,15 @@
+---
+import { faq } from '../data/site.js';
+---
+
+<section id="faq" class="faq container">
+  <div class="faq__head">
+    <h2 class="h h--lg">Veelgestelde<br /><em>vragen.</em></h2>
+    <p>Staat jouw vraag er niet tussen? Stuur me een berichtje.</p>
+  </div>
+  <div class="faq__list">
+    {faq.map((f, i) => (
+      <details open={i === 0}><summary>{f.q} <i data-lucide="plus"></i></summary><p>{f.a}</p></details>
+    ))}
+  </div>
+</section>

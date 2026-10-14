@@ -1,0 +1,18 @@
+---
+import { posts } from '../data/site.js';
+---
+
+<section class="carousel" aria-label="Uit mijn feed">
+  <div class="carousel__track">
+    {posts.map((p) => (
+      <a class="vcard" href={p.href} target="_blank" rel="noopener">
+        <img src={p.img} alt={p.alt} loading="lazy" />
+        <span class="vcard__top"><span class="tag">{p.tag}</span><span class="play"><i data-lucide="play"></i></span></span>
+        <span class="vcard__bottom">
+          <q>{p.quote}</q>
+          <span class="author"><img src="/img/avatar.jpg" alt="" /><span><b>Jikke</b><small>@jikke_vdbx</small></span></span>
+        </span>
+      </a>
+    ))}
+  </div>
+</section>
