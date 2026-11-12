@@ -20,7 +20,7 @@ export const posts = [
   { href: 'https://www.instagram.com/reel/DWMdKxVjET0/', img: B + '/img/pump.jpg', alt: 'Jikke toont haar rug in de spiegel', tag: 'Training', quote: 'De gym bouwt niet alleen je lichaam. Hij bouwt je discipline.' },
   { href: 'https://www.instagram.com/reel/DT8UAgWDIJ0/', img: B + '/img/tip.jpg', alt: 'Jikke in de gym', tag: 'Tip', quote: 'Zorg dat je elke dag genoeg eiwitten binnen hebt.' },
   { href: 'https://www.instagram.com/reel/DVWf-I1jICb/', img: B + '/img/gym2.jpg', alt: 'Jikke in de gym', tag: 'Afvallen', quote: 'Calorie deficit works. Als je plan klopt.' },
-  { href: 'https://www.instagram.com/p/DZnMtZ-DF4B/', img: B + '/img/hood.jpg', alt: 'Jikke bij een sportwagen', tag: 'Progress', quote: 'Surpass your limits. Elke week een stap verder.' },
+  { href: 'https://www.instagram.com/p/DZnMtZ-DF4B/', img: B + '/img/car.jpg', alt: 'Jikke bij een sportwagen', tag: 'Progress', quote: 'Surpass your limits. Elke week een stap verder.' },
 ];
 
 // Goal cards + the detail block they open
