@@ -1,4 +1,5 @@
 // All page content in one place, so copy and photos are easy to swap.
+const B = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export const IG = 'https://www.instagram.com/jikke_vdbx/';
 export const WHATSAPP = 'https://wa.me/32468319381';
@@ -14,41 +15,41 @@ export const nav = [
 
 // Carousel: lines based on her own Instagram captions, linked to the real posts
 export const posts = [
-  { href: 'https://www.instagram.com/reel/DX1-x5lMUAC/', img: '/img/hero.jpg', alt: 'Jikke traint in de gym', tag: 'Mindset', quote: 'Discipline bouwt het. Consistentie houdt het.' },
-  { href: 'https://www.instagram.com/p/DVJnGXdDBqe/', img: '/img/herofood.jpg', alt: 'Havermout met banaan op een weegschaal', tag: 'Voeding', quote: 'What I eat in a day: -0,5 kg per week, zonder honger.' },
-  { href: 'https://www.instagram.com/reel/DWMdKxVjET0/', img: '/img/pump.jpg', alt: 'Jikke toont haar rug in de spiegel', tag: 'Training', quote: 'De gym bouwt niet alleen je lichaam. Hij bouwt je discipline.' },
-  { href: 'https://www.instagram.com/reel/DT8UAgWDIJ0/', img: '/img/tip.jpg', alt: 'Jikke in de gym', tag: 'Tip', quote: 'Zorg dat je elke dag genoeg eiwitten binnen hebt.' },
-  { href: 'https://www.instagram.com/reel/DVWf-I1jICb/', img: '/img/gym2.jpg', alt: 'Jikke in de gym', tag: 'Afvallen', quote: 'Calorie deficit works. Als je plan klopt.' },
-  { href: 'https://www.instagram.com/p/DZnMtZ-DF4B/', img: '/img/hood.jpg', alt: 'Jikke bij een sportwagen', tag: 'Progress', quote: 'Surpass your limits. Elke week een stap verder.' },
+  { href: 'https://www.instagram.com/reel/DX1-x5lMUAC/', img: B + '/img/hero.jpg', alt: 'Jikke traint in de gym', tag: 'Mindset', quote: 'Discipline bouwt het. Consistentie houdt het.' },
+  { href: 'https://www.instagram.com/p/DVJnGXdDBqe/', img: B + '/img/herofood.jpg', alt: 'Havermout met banaan op een weegschaal', tag: 'Voeding', quote: 'What I eat in a day: -0,5 kg per week, zonder honger.' },
+  { href: 'https://www.instagram.com/reel/DWMdKxVjET0/', img: B + '/img/pump.jpg', alt: 'Jikke toont haar rug in de spiegel', tag: 'Training', quote: 'De gym bouwt niet alleen je lichaam. Hij bouwt je discipline.' },
+  { href: 'https://www.instagram.com/reel/DT8UAgWDIJ0/', img: B + '/img/tip.jpg', alt: 'Jikke in de gym', tag: 'Tip', quote: 'Zorg dat je elke dag genoeg eiwitten binnen hebt.' },
+  { href: 'https://www.instagram.com/reel/DVWf-I1jICb/', img: B + '/img/gym2.jpg', alt: 'Jikke in de gym', tag: 'Afvallen', quote: 'Calorie deficit works. Als je plan klopt.' },
+  { href: 'https://www.instagram.com/p/DZnMtZ-DF4B/', img: B + '/img/hood.jpg', alt: 'Jikke bij een sportwagen', tag: 'Progress', quote: 'Surpass your limits. Elke week een stap verder.' },
 ];
 
 // Goal cards + the detail block they open
 export const goals = [
   {
     key: 'afvallen', label: 'Afvallen', num: '01', wide: true,
-    card: { img: '/img/voorna-afvallen.jpg', alt: 'Voor en na een traject afvallen', text: 'Duurzaam gewicht verliezen, zonder jojo-effect.' },
+    card: { img: B + '/img/voorna-afvallen.jpg', alt: 'Voor en na een traject afvallen', text: 'Duurzaam gewicht verliezen, zonder jojo-effect.' },
     title: 'Afvallen <em>zonder crashdieet.</em>',
     body: 'We werken met pure, onbewerkte voeding die je vult en energie geeft. Je leert wat je eet, waarom het werkt en hoe je het volhoudt, ook in drukke weken.',
     list: ['Voedingsplan op maat', 'Wekelijkse check-in en bijsturing', 'Recepten en boodschappenlijsten', 'WhatsApp support'],
-    img: '/img/food-grid.jpg', alt: 'Vier voedzame kommen met pannenkoeken, fruit en pindakaas',
+    img: B + '/img/food-grid.jpg', alt: 'Vier voedzame kommen met pannenkoeken, fruit en pindakaas',
     cta: 'Start je intake: afvallen',
   },
   {
     key: 'gewicht', label: 'Op gewicht blijven', num: '02',
-    card: { img: '/img/voorna-gewicht.jpg', alt: 'Voor en na een traject op gewicht blijven', text: 'Je resultaat vasthouden, ontspannen eten.' },
+    card: { img: B + '/img/voorna-gewicht.jpg', alt: 'Voor en na een traject op gewicht blijven', text: 'Je resultaat vasthouden, ontspannen eten.' },
     title: 'Op gewicht blijven, <em>zonder stress.</em>',
     body: 'Je resultaat vasthouden is een vaardigheid. We zoeken een ritme waarin je geniet van etentjes en feestjes, en weet hoe je daarna gewoon weer oppakt.',
     list: ['Onderhoudsplan op maat', 'Tweewekelijkse check-in', 'Flexibele recepten voor elke dag', 'WhatsApp support'],
-    img: '/img/food.jpg', alt: 'Kom met steak en groenten',
+    img: B + '/img/food.jpg', alt: 'Kom met steak en groenten',
     cta: 'Start je intake: op gewicht blijven',
   },
   {
     key: 'aankomen', label: 'Aankomen', num: '03',
-    card: { img: '/img/voorna-aankomen.jpg', alt: 'Voor en na een traject aankomen', text: 'Spiermassa opbouwen met de juiste voeding.' },
+    card: { img: B + '/img/voorna-aankomen.jpg', alt: 'Voor en na een traject aankomen', text: 'Spiermassa opbouwen met de juiste voeding.' },
     title: 'Aankomen en <em>sterker worden.</em>',
     body: 'Gericht aankomen en spiermassa opbouwen met voeding die je training echt ondersteunt. Genoeg eiwitten, genoeg energie en een plan dat meegroeit met je progressie.',
     list: ['Voedingsplan afgestemd op je training', 'Wekelijkse check-in en bijsturing', 'Eiwitrijke recepten', 'WhatsApp support'],
-    img: '/img/flex2.jpg', alt: 'Jikke toont haar rugspieren',
+    img: B + '/img/flex2.jpg', alt: 'Jikke toont haar rugspieren',
     cta: 'Start je intake: aankomen',
   },
 ];

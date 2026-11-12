@@ -1,10 +1,11 @@
 ---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 import { nav } from '../data/site.js';
 ---
 
 <header class="hero-wrap">
   <div class="hero">
-    <img class="hero__img" src="/img/car.jpg" alt="Jikke bij een sportwagen" />
+    <img class="hero__img" src={`${base}/img/car.jpg`} alt="Jikke bij een sportwagen" />
     <div class="hero__shade"></div>
     <nav class="nav">
       <a href="#" class="logo">JIKKE</a>
