@@ -1,7 +1,8 @@
 // All page content in one place, so copy and photos are easy to swap.
 
 export const IG = 'https://www.instagram.com/jikke_vdbx/';
-export const WHATSAPP = 'https://wa.me/32400000000'; // placeholder, real number before launch
+export const WHATSAPP = 'https://wa.me/32468319381';
+export const WHATSAPP_TEXT = '+32 468 31 93 81';
 
 export const nav = [
   { href: '#doelen', label: 'Doelen' },
@@ -25,16 +26,16 @@ export const posts = [
 export const goals = [
   {
     key: 'afvallen', label: 'Afvallen', num: '01', wide: true,
-    card: { img: '/img/afvallen.jpg', alt: 'Jikke na haar cut', text: 'Duurzaam gewicht verliezen, zonder jojo-effect.' },
+    card: { img: '/img/voorna-afvallen.jpg', alt: 'Voor en na een traject afvallen', text: 'Duurzaam gewicht verliezen, zonder jojo-effect.' },
     title: 'Afvallen <em>zonder crashdieet.</em>',
     body: 'We werken met pure, onbewerkte voeding die je vult en energie geeft. Je leert wat je eet, waarom het werkt en hoe je het volhoudt, ook in drukke weken.',
     list: ['Voedingsplan op maat', 'Wekelijkse check-in en bijsturing', 'Recepten en boodschappenlijsten', 'WhatsApp support'],
-    img: '/img/herofood.jpg', alt: 'Havermout met banaan op een keukenweegschaal',
+    img: '/img/food-grid.jpg', alt: 'Vier voedzame kommen met pannenkoeken, fruit en pindakaas',
     cta: 'Start je intake: afvallen',
   },
   {
     key: 'gewicht', label: 'Op gewicht blijven', num: '02',
-    card: { img: '/img/gewicht.jpg', alt: 'Jikke buiten op een uitzichtpunt', text: 'Je resultaat vasthouden, ontspannen eten.' },
+    card: { img: '/img/voorna-gewicht.jpg', alt: 'Voor en na een traject op gewicht blijven', text: 'Je resultaat vasthouden, ontspannen eten.' },
     title: 'Op gewicht blijven, <em>zonder stress.</em>',
     body: 'Je resultaat vasthouden is een vaardigheid. We zoeken een ritme waarin je geniet van etentjes en feestjes, en weet hoe je daarna gewoon weer oppakt.',
     list: ['Onderhoudsplan op maat', 'Tweewekelijkse check-in', 'Flexibele recepten voor elke dag', 'WhatsApp support'],
@@ -43,7 +44,7 @@ export const goals = [
   },
   {
     key: 'aankomen', label: 'Aankomen', num: '03',
-    card: { img: '/img/aankomen.jpg', alt: 'Jikke traint op een toestel', text: 'Spiermassa opbouwen met de juiste voeding.' },
+    card: { img: '/img/voorna-aankomen.jpg', alt: 'Voor en na een traject aankomen', text: 'Spiermassa opbouwen met de juiste voeding.' },
     title: 'Aankomen en <em>sterker worden.</em>',
     body: 'Gericht aankomen en spiermassa opbouwen met voeding die je training echt ondersteunt. Genoeg eiwitten, genoeg energie en een plan dat meegroeit met je progressie.',
     list: ['Voedingsplan afgestemd op je training', 'Wekelijkse check-in en bijsturing', 'Eiwitrijke recepten', 'WhatsApp support'],
@@ -59,11 +60,11 @@ export const steps = [
   { title: 'Zelfstandig verder', text: 'Je leert zelf de juiste keuzes maken, zodat je resultaat blijft.' },
 ];
 
-// Answers 2-5 still to come from Jikke
+// Answers 2 and 5 still to come from Jikke (3 and 4 written from her notes)
 export const faq = [
   { q: 'Voor wie is deze coaching?', a: 'Voor iedereen met een concreet doel: afvallen, op gewicht blijven of aankomen. Je hoeft geen ervaring te hebben, we starten waar jij staat.' },
   { q: 'Moet ik alles afwegen en calorieën tellen?', a: '[Antwoord Jikke]' },
-  { q: 'Hoe lang duurt een traject?', a: '[Antwoord Jikke]' },
-  { q: 'Wat kost coaching?', a: '[Antwoord Jikke]' },
+  { q: 'Hoe lang duurt een traject?', a: 'Ik werk met maandtrajecten. Hoe langer je kiest, hoe voordeliger het wordt en hoe meer resultaat je boekt.' },
+  { q: 'Wat kost coaching?', a: 'Ik zet geen prijzen online. Plan een gratis intake in, dan bespreken we je doel en kijk ik welk traject bij jou past.' },
   { q: 'Kan ik volledig online begeleid worden?', a: '[Antwoord Jikke]' },
 ];
