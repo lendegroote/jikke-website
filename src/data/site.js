@@ -61,11 +61,8 @@ export const steps = [
   { title: 'Zelfstandig verder', text: 'Je leert zelf de juiste keuzes maken, zodat je resultaat blijft.' },
 ];
 
-// Answers 2 and 5 still to come from Jikke (3 and 4 written from her notes)
 export const faq = [
   { q: 'Voor wie is deze coaching?', a: 'Voor iedereen met een concreet doel: afvallen, op gewicht blijven of aankomen. Je hoeft geen ervaring te hebben, we starten waar jij staat.' },
-  { q: 'Moet ik alles afwegen en calorieën tellen?', a: '[Antwoord Jikke]' },
   { q: 'Hoe lang duurt een traject?', a: 'Ik werk met maandtrajecten. Hoe langer je kiest, hoe voordeliger het wordt en hoe meer resultaat je boekt.' },
   { q: 'Wat kost coaching?', a: 'Ik zet geen prijzen online. Plan een gratis intake in, dan bespreken we je doel en kijk ik welk traject bij jou past.' },
-  { q: 'Kan ik volledig online begeleid worden?', a: '[Antwoord Jikke]' },
 ];
