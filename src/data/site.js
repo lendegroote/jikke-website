@@ -7,6 +7,7 @@ export const WHATSAPP_TEXT = '+32 468 31 93 81';
 
 export const nav = [
   { href: '#doelen', label: 'Doelen' },
+  { href: '#training', label: 'Training' },
   { href: '#aanpak', label: 'Aanpak' },
   { href: '#over-mij', label: 'Over mij' },
   { href: '#faq', label: 'FAQ' },
@@ -30,7 +31,7 @@ export const goals = [
     card: { img: B + '/img/voorna-afvallen.jpg', alt: 'Voor en na een traject afvallen', text: 'Duurzaam gewicht verliezen, zonder jojo-effect.' },
     title: 'Afvallen <em>zonder crashdieet.</em>',
     body: 'We werken met pure, onbewerkte voeding die je vult en energie geeft. Je leert wat je eet, waarom het werkt en hoe je het volhoudt, ook in drukke weken.',
-    list: ['Voedingsplan op maat', 'Wekelijkse check-in en bijsturing', 'Recepten en boodschappenlijsten', 'WhatsApp support'],
+    list: ['Voedingsplan op maat', 'Trainingsschema op maat', 'Wekelijkse check-in en bijsturing', 'Recepten en boodschappenlijsten', 'WhatsApp support'],
     img: B + '/img/food-grid.jpg', alt: 'Vier voedzame kommen met pannenkoeken, fruit en pindakaas',
     cta: 'Start je intake: afvallen',
   },
@@ -39,24 +40,33 @@ export const goals = [
     card: { img: B + '/img/voorna-gewicht.jpg', alt: 'Voor en na een traject op gewicht blijven', text: 'Je resultaat vasthouden, ontspannen eten.' },
     title: 'Op gewicht blijven, <em>zonder stress.</em>',
     body: 'Je resultaat vasthouden is een vaardigheid. We zoeken een ritme waarin je geniet van etentjes en feestjes, en weet hoe je daarna gewoon weer oppakt.',
-    list: ['Onderhoudsplan op maat', 'Tweewekelijkse check-in', 'Flexibele recepten voor elke dag', 'WhatsApp support'],
+    list: ['Onderhoudsplan op maat', 'Trainingsschema op maat', 'Tweewekelijkse check-in', 'Flexibele recepten voor elke dag', 'WhatsApp support'],
     img: B + '/img/food.jpg', alt: 'Kom met steak en groenten',
     cta: 'Start je intake: op gewicht blijven',
   },
   {
     key: 'aankomen', label: 'Aankomen', num: '03',
-    card: { img: B + '/img/voorna-aankomen.jpg', alt: 'Voor en na een traject aankomen', text: 'Spiermassa opbouwen met de juiste voeding.' },
+    card: { img: B + '/img/voorna-aankomen.jpg', alt: 'Voor en na een traject aankomen', text: 'Spiermassa opbouwen met de juiste voeding en training.' },
     title: 'Aankomen en <em>sterker worden.</em>',
     body: 'Gericht aankomen en spiermassa opbouwen met voeding die je training echt ondersteunt. Genoeg eiwitten, genoeg energie en een plan dat meegroeit met je progressie.',
-    list: ['Voedingsplan afgestemd op je training', 'Wekelijkse check-in en bijsturing', 'Eiwitrijke recepten', 'WhatsApp support'],
+    list: ['Voedingsplan afgestemd op je training', 'Trainingsschema op maat', 'Wekelijkse check-in en bijsturing', 'Eiwitrijke recepten', 'WhatsApp support'],
     img: B + '/img/flex2.jpg', alt: 'Jikke toont haar rugspieren',
     cta: 'Start je intake: aankomen',
   },
 ];
 
+// Training block: Jikke asked for more focus on training and her trainingsschema's (21 Nov)
+export const training = {
+  title: 'Sterker worden <em>met de juiste training.</em>',
+  body: "Voeding is de helft van je resultaat, training de andere helft. Daarom maak ik ook trainingsschema's op maat. We kijken naar je doel, je niveau en hoeveel tijd je hebt, en bouwen een schema dat je echt volhoudt.",
+  list: ['Trainingsschema op maat van je doel', 'Focus op de juiste techniek en uitvoering', 'Opbouw die meegroeit met je progressie', 'Afgestemd op je voedingsplan'],
+  img: B + '/img/pump.jpg', alt: 'Jikke toont haar rugspieren in de gym',
+  cta: 'Start je intake',
+};
+
 export const steps = [
   { title: 'Gratis intake', text: 'We leren elkaar kennen: je doel, je dag en wat je tot nu toe tegenhield.' },
-  { title: 'Plan op maat', text: 'Een voedingsplan dat past bij jouw smaak, ritme en training.' },
+  { title: 'Plan op maat', text: 'Een voedings- en trainingsschema dat past bij jouw smaak, ritme en doel.' },
   { title: 'Wekelijkse coaching', text: 'Elke week een check-in. We sturen bij waar nodig.' },
   { title: 'Zelfstandig verder', text: 'Je leert zelf de juiste keuzes maken, zodat je resultaat blijft.' },
 ];
@@ -64,5 +74,5 @@ export const steps = [
 export const faq = [
   { q: 'Voor wie is deze coaching?', a: 'Voor iedereen met een concreet doel: afvallen, op gewicht blijven of aankomen. Je hoeft geen ervaring te hebben, we starten waar jij staat.' },
   { q: 'Hoe lang duurt een traject?', a: 'Ik werk met maandtrajecten. Hoe langer je kiest, hoe voordeliger het wordt en hoe meer resultaat je boekt.' },
-  { q: 'Wat kost coaching?', a: 'Ik zet geen prijzen online. Plan een gratis intake in, dan bespreken we je doel en kijk ik welk traject bij jou past.' },
+  { q: 'Wat kost coaching?', a: 'Plan een gratis intake in, zo bespreken we je doelen en kijk ik wat voor traject bij jou past. Ieder traject is anders en sommige hebben iets meer coaching nodig dan andere.' },
 ];

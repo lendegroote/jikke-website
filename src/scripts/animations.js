@@ -25,7 +25,7 @@ import Lenis from 'lenis';
 
   // Elements that fade in
   const single = [
-    '.statement > *', '.section-head', '.detail', '.about__photos', '.about__text',
+    '.statement > *', '.section-head', '.detail', '.training__img', '.training__text', '.about__photos', '.about__text',
     '.steps > .h', '.intake', '.faq__head', '.footer',
   ];
   document.querySelectorAll(single.join(',')).forEach((el) => el.classList.add('reveal'));
